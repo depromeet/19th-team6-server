@@ -35,3 +35,34 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+### Windows ###
+Thumbs.db
+Desktop.ini
+
+### Logs ###
+logs/
+*.log
+
+### Secrets / 환경 설정 ###
+# jwt, aws, mail 등 민감 정보가 담긴 설정 파일은 커밋하지 않습니다.
+.env
+.env.*
+src/main/resources/application-*.yml
+src/main/resources/application-*.yaml
+!src/main/resources/application-*.example.yml
+*.pem
+*.p12
+*.key
+
+### QueryDSL / Annotation Processor ###
+src/main/generated/
+
+### Claude Code ###
+.claude/settings.local.json
